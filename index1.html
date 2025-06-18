@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Empress Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fefbf9, #f9f4ee);
+            font-family: 'Montserrat', sans-serif;
+            color: #2c2c2c;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 160px 20px 80px;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            color: #fff4e6;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            color: #f8e8d8;
+            font-size: 1.2rem;
+        }
+
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin: 60px auto;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .benefit {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+            width: 240px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit i {
+            font-size: 2.5rem;
+            color: #C49A6C;
+        }
+
+        .benefit p {
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .form-section {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            color: #C49A6C;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .btn-gold {
+            background: linear-gradient(145deg, #d8b07a, #b98e5f);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            transition: 0.3s ease;
+            box-shadow: 0 6px 15px rgba(196, 154, 108, 0.4);
+        }
+
+        .btn-gold:hover {
+            background: #b88a5c;
+            transform: scale(1.03);
+        }
+
+        .carousel-inner {
+            background: #fef9f3;
+            padding: 50px 20px;
+        }
+
+        .testimonial {
+            font-style: italic;
+            color: #555;
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .testimonial footer {
+            margin-top: 15px;
+            font-weight: 500;
+            color: #888;
+            font-style: normal;
+        }
+
+        .box-mockup {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .box-mockup img {
+            max-width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                padding: 120px 20px 60px;
+            }
+            .hero video {
+                display: none;
+            }
+            .hero {
+                background: linear-gradient(to bottom, #b98e5f, #a67a51);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero" data-aos="fade-down">
+        <video autoplay muted loop playsinline>
+            <source src="https://cdn.coverr.co/videos/coverr-luxury-silk-cloth-7771/1080p.mp4" type="video/mp4">
+        </video>
+        <h1><i class="fas fa-crown"></i> The Empress Club</h1>
+        <p>Receba uma box exclusiva com moda personalizada, autocuidado e mimos feitos para quem sabe o valor de se amar.</p>
+    </div>
+
+    <div class="box-mockup" data-aos="fade-up">
+    <img src="3.png" alt="Empress Club Box">
+    </div>
+
+
+    <div class="benefits">
+        <div class="benefit" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-gem"></i>
+            <p>Curadoria de luxo</p>
+        </div>
+        <div class="benefit" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-tshirt"></i>
+            <p>Moda personalizada</p>
+        </div>
+        <div class="benefit" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-gift"></i>
+            <p>Mimos surpresa</p>
+        </div>
+    </div>
+
+    <div class="form-section" data-aos="zoom-in">
+        <h2>Quero entrar para a lista VIP</h2>
+        <form id="interesseForm">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome completo *</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail *</label>
+                <input type="email" class="form-control" id="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="mb-3">
+                <label for="whatsapp" class="form-label">WhatsApp *</label>
+                <input type="tel" class="form-control" id="whatsapp" placeholder="(11) 91234-5678" required />
+            </div>
+            <div class="mb-3">
+                <label for="estilo" class="form-label">Estilo preferido</label>
+                <select class="form-select" id="estilo">
+                    <option selected disabled>Escolha seu estilo</option>
+                    <option value="Farm/Boho">Farm/Boho</option>
+                    <option value="Casual Chic">Casual Chic</option>
+                    <option value="Streetwear">Streetwear</option>
+                    <option value="Romântico">Romântico</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Você assinaria uma box por R$129/mês?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="interesse" id="sim" value="Sim" required />
+                    <label class="form-check-label" for="sim">Sim, com certeza!</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="interesse" id="nao" value="Não" />
+                    <label class="form-check-label" for="nao">Ainda tenho dúvidas</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="mimos" class="form-label">Quais mimos você gostaria de receber?</label>
+                <input type="text" class="form-control" id="mimos" placeholder="Cremes, acessórios, velas..." />
+            </div>
+            <button type="submit" class="btn btn-gold w-100">Quero receber minha box!</button>
+            <div id="mensagemEnviada" class="alert alert-success mt-3 d-none" role="alert">
+                Enviado com sucesso! Em breve entraremos em contato 📬
+            </div>
+        </form>
+    </div>
+
+    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <p class="testimonial">“Quando abri minha box do mês, me senti verdadeiramente especial. Tudo veio perfeito para o meu estilo.”</p>
+                <footer>Marina L., assinante</footer>
+            </div>
+            <div class="carousel-item">
+                <p class="testimonial">“Eu nunca me senti tão mimada! Cada detalhe da box mostra cuidado e bom gosto.”</p>
+                <footer>Renata P., Belo Horizonte</footer>
+            </div>
+            <div class="carousel-item">
+                <p class="testimonial">“Todo mês é como se fosse meu aniversário. A qualidade das peças e dos mimos é surreal.”</p>
+                <footer>Larissa G., Recife</footer>
+            </div>
+            <div class="carousel-item">
+                <p class="testimonial">“É mais que uma caixa. É uma experiência de autoestima, estilo e amor-próprio.”</p>
+                <footer>Juliana M., Curitiba</footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        document.getElementById('interesseForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const msg = document.getElementById("mensagemEnviada");
+            msg.classList.remove("d-none");
+            this.reset();
+            setTimeout(() => {
+                msg.classList.add("d-none");
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
