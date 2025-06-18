@@ -209,22 +209,31 @@
 
     <div class="form-section" data-aos="zoom-in">
         <h2>Quero entrar para a lista VIP</h2>
-        <form id="interesseForm">
+        <form action="https://formsubmit.co/diegocostaferreiradasilva@gmail.com" method="POST">
+            <!-- Oculta o captcha e usa template bonito -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome completo *</label>
-                <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+                <input type="text" class="form-control" id="nome" name="Nome Completo" placeholder="Seu nome"
+                    required />
             </div>
+
             <div class="mb-3">
                 <label for="email" class="form-label">E-mail *</label>
-                <input type="email" class="form-control" id="email" placeholder="seu@email.com" required />
+                <input type="email" class="form-control" id="email" name="Email" placeholder="seu@email.com" required />
             </div>
+
             <div class="mb-3">
                 <label for="whatsapp" class="form-label">WhatsApp *</label>
-                <input type="tel" class="form-control" id="whatsapp" placeholder="(11) 91234-5678" required />
+                <input type="tel" class="form-control" id="whatsapp" name="WhatsApp" placeholder="(11) 91234-5678"
+                    required />
             </div>
+
             <div class="mb-3">
                 <label for="estilo" class="form-label">Estilo preferido</label>
-                <select class="form-select" id="estilo">
+                <select class="form-select" id="estilo" name="Estilo preferido">
                     <option selected disabled>Escolha seu estilo</option>
                     <option value="Farm/Boho">Farm/Boho</option>
                     <option value="Casual Chic">Casual Chic</option>
@@ -233,25 +242,27 @@
                     <option value="Outro">Outro</option>
                 </select>
             </div>
+
             <div class="mb-3">
                 <label class="form-label">Você assinaria uma box por R$129/mês?</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="interesse" id="sim" value="Sim" required />
+                    <input class="form-check-input" type="radio" name="Assinaria?" id="sim" value="Sim" required />
                     <label class="form-check-label" for="sim">Sim, com certeza!</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="interesse" id="nao" value="Não" />
+                    <input class="form-check-input" type="radio" name="Assinaria?" id="nao"
+                        value="Ainda tenho dúvidas" />
                     <label class="form-check-label" for="nao">Ainda tenho dúvidas</label>
                 </div>
             </div>
+
             <div class="mb-3">
                 <label for="mimos" class="form-label">Quais mimos você gostaria de receber?</label>
-                <input type="text" class="form-control" id="mimos" placeholder="Cremes, acessórios, velas..." />
+                <input type="text" class="form-control" id="mimos" name="Mimos desejados"
+                    placeholder="Cremes, acessórios, velas..." />
             </div>
+
             <button type="submit" class="btn btn-gold w-100">Quero receber minha box!</button>
-            <div id="mensagemEnviada" class="alert alert-success mt-3 d-none" role="alert">
-                Enviado com sucesso! Em breve entraremos em contato 📬
-            </div>
         </form>
     </div>
 
